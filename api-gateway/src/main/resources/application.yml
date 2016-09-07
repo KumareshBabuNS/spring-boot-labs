@@ -1,4 +1,9 @@
-spring.application.name: api-gateway
+spring:
+  application.name: api-gateway
+  zipkin:
+    sleuth:
+      sampler:
+        percentage: 1.0
 security.basic.enabled: false
 management.security.enabled: false
 info.foo: bar
@@ -12,6 +17,8 @@ zuul:
   routes:
     address-book-service: /service/**
     address-book-client: /client/**
+
+
 
 
 
