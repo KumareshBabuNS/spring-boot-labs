@@ -7,11 +7,12 @@ info.app.java.source: @java.version@
 info.app.java.target: @java.version@
 server.port: 9000
 
-#zuul:
-#  ignoredServices: '*'
-#  routes:
-#    address-book-service:
-#      path: /contacts/**
+zuul:
+  ignoredServices: '*'
+  routes:
+    address-book-service: /service/**
+    address-book-client: /client/**
+
 
 
 
