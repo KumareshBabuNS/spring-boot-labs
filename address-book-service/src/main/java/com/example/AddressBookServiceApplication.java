@@ -1,6 +1,8 @@
 package com.example;
 
 import lombok.Data;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -17,7 +19,18 @@ import javax.persistence.Id;
 
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AddressBookServiceApplication {
+public class AddressBookServiceApplication implements CommandLineRunner{
+
+	@Autowired ContactRepository contactRepository;
+
+	public void run(String...arg){
+
+		Contact c = new Contact();
+		c.setContact("18283434");
+		c.setAddress("Shatin");
+		c.setName("Peter");
+		contactRepository.save(c);
+	}
 
 	@Bean
 	public Sampler defaultSampler() {
