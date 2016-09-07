@@ -8,4 +8,5 @@ applications:
   - discovery-service
   - config-service
   - circuit-breaker-dashboard
+  - rabbitmq
 

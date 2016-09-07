@@ -8,4 +8,4 @@ applications:
   - contact-db
   - discovery-service
   - config-service
-
+  - rabbitmq

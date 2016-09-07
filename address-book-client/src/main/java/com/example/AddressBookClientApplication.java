@@ -8,6 +8,9 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.cloud.sleuth.Sampler;
+import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
+import org.springframework.context.annotation.Bean;
 import org.springframework.hateoas.Resources;
 import org.springframework.hateoas.config.EnableHypermediaSupport;
 import org.springframework.stereotype.Service;
@@ -25,9 +28,16 @@ import java.util.stream.Collectors;
 @SpringBootApplication
 public class AddressBookClientApplication {
 
+	@Bean
+	public Sampler defaultSampler() {
+		return new AlwaysSampler();
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(AddressBookClientApplication.class, args);
 	}
+
+
 }
 
 @Data
