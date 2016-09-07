@@ -1,0 +1,11 @@
+---
+applications:
+- name: address-book-service
+  memory: 768MB
+  host: address-book-service-dwong
+  path: target/address-book-service-0.0.1-SNAPSHOT.jar
+  services:
+  - contact-db
+  - discovery-service
+  - config-service
+
