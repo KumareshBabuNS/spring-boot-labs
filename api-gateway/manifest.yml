@@ -7,4 +7,3 @@ applications:
   services:
   - discovery-service
   - config-service
-  - rabbitmq

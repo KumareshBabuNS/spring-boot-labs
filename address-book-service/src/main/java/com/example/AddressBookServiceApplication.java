@@ -14,6 +14,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+
 @EnableDiscoveryClient
 @SpringBootApplication
 public class AddressBookServiceApplication {

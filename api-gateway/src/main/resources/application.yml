@@ -1,9 +1,8 @@
 spring:
   application.name: api-gateway
-  zipkin:
-    sleuth:
-      sampler:
-        percentage: 1.0
+  sleuth:
+    sampler:
+      percentage: 1.0
 security.basic.enabled: false
 management.security.enabled: false
 info.foo: bar
