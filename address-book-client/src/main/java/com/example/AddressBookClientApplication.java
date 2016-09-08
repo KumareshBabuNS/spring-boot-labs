@@ -89,7 +89,7 @@ class ContactController{
 	@RequestMapping("/names")
 	public List<String> getAllNames(){
 
-		tracer.addTag("hello","world");
+		tracer.addTag("foo","bar");
 
 		return addressBookRemoteService
 				.getAllContacts()
