@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20e2f870-2c02-40e3-8cbd-2b07d1770728" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../address-book-client/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../address-book-client/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../address-book-client/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../address-book-client/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/AddressBookServiceApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/AddressBookServiceApplication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../api-gateway/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/src/main/java/com/example/ConfigServerApplication.java" afterPath="$PROJECT_DIR$/../config-server/src/main/java/com/example/ConfigServerApplication.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/../config-server/src/main/resources/application.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../eureka/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../eureka/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../zipkin-service/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../zipkin-service/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../zipkin-service/src/main/java/com/example/ZipkinServiceApplication.java" afterPath="$PROJECT_DIR$/../zipkin-service/src/main/java/com/example/ZipkinServiceApplication.java" />
     </list>
     <ignored path="address-book-service.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +46,8 @@
       <file leaf-file-name="AddressBookServiceApplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/AddressBookServiceApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="272">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1129#1130#0" expanded="true" />
@@ -849,12 +851,12 @@
       <updated>1473167484539</updated>
       <workItem from="1473167485986" duration="8061000" />
       <workItem from="1473233255334" duration="5220000" />
-      <workItem from="1473250468764" duration="4663000" />
+      <workItem from="1473250468764" duration="5813000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17944000" />
+    <option name="totallyTimeSpent" value="19094000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1135" extended-state="6" />
@@ -1007,8 +1009,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/example/AddressBookServiceApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="272">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1129#1130#0" expanded="true" />
