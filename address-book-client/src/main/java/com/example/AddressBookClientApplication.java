@@ -9,6 +9,8 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.cloud.sleuth.Sampler;
+import org.springframework.cloud.sleuth.Span;
+import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.cloud.sleuth.sampler.AlwaysSampler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.hateoas.Resources;
@@ -19,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 @EnableHypermediaSupport(type = EnableHypermediaSupport.HypermediaType.HAL)
@@ -36,7 +39,6 @@ public class AddressBookClientApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AddressBookClientApplication.class, args);
 	}
-
 
 }
 
@@ -70,6 +72,14 @@ class AddressBookFallback implements AddressBookRemoteService{
 
 @RestController
 class ContactController{
+
+	Tracer tracer;
+
+	@Autowired
+	ContactController(Tracer tracer){
+		this.tracer=tracer;
+	}
+
 	@Autowired
 	AddressBookRemoteService addressBookRemoteService;
 
@@ -78,6 +88,9 @@ class ContactController{
 
 	@RequestMapping("/names")
 	public List<String> getAllNames(){
+
+		tracer.addTag("hello","world");
+
 		return addressBookRemoteService
 				.getAllContacts()
 				.getContent()
@@ -86,3 +99,5 @@ class ContactController{
 				.collect(Collectors.toList());
 	}
 }
+
+
